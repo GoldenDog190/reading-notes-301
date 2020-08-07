@@ -1,1 +1,13 @@
-# Ducket - HTML & CSS / JavaScript & JQuery Notes
+# Online Readings
+
+## [CSS Grid Garden](https://cssgridgarden.com/)
+
+## [RegExr](https://regexr.com/)
+
+## [Regex Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
+
+## [Regex 101](https://regex101.com/)
+
+## [CSS Grid Reference](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+## [Responsive design with CSS Grid](https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df)
