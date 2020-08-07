@@ -79,4 +79,35 @@
 
 ## [SMACSS Offical Documentation](http://smacss.com/)
 
-**SMACSS**
+**SMACSS(Scalable and Modular Architechure for CSS)**
+* At the core of SMACSS is categorization. The 5 Types of Categories are: base, layout, module, state, and theme
+  - Base rules are defaults, single element selectors, but could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors. Doesn't include any class or ID selectors. Base styles include heading sizes, default link styles, default font styles, and body background.
+    * CSS reset is a set of Base styles designed to stripout/ reset the default margin, padding, and other properties. Defines a consistent foundation across browsers to build the site on. 
+  - Layout rules divide the page into sections. Layouts hold one or more modules together. There is a distinction between layouts dictating the major and minor components of a page. 
+    * Major components are refered to as layout styles, and include the header and footer traditionally styled using ID slelctors.
+    * Minor components, such as a login form, sit within the scope of major componenets. Refered to as modules.
+  - Moldules are reusable, modular parts of our design, and the desrete component of the page. The callouts, sidebars sections, product list, etc... Sits inside of the layout components. Aviod using IDs and element selectors, use class names only!
+  - State rules describe how modules or layouts will look in a particular state. Describing how modules or layouts look on screens big or small. A state is something that augments and overrides all other styles. Generally applied to the same element as a layout rule or applied to the same element as a base module class. Difference from modules: can apply to layout/ or module styles, and indicate a JavaScript dependency.
+  - Theme rules are similar to state rules in they describe how modules or layouts might look. Defines colors and images that give site its look and feel. Can affect any of the primary types, override base styles, change module elements, alter how states look, or affect layout with different arrangements. 
+   * Font rules will normally affect base, module, and state styles.
+ - Naming Rules - by seperating the rules, naming convention is benefical to understand which category a particular style belongs to and its role within the overall scope of the page.
+* State changes represented in one of three ways: class name, pseudo-class, and media query.
+  - Class name change happens with JavaScript, for example mouse clicks or moves changing the color.
+  - Pseudo-class can only style changes to elements that are descendants or siblings of element.
+  - Media queries describe how things should be styled under defined criteria, such as different viewport sizes.
+
+* Depth of Applicability
+ - If you just use CSS as you would use it for a small site on a larger site, issues will pop up due to relying too heavily on a defined HTML structure, and the depth of HTML to which the selectors apply is too deep. 
+ - Minimize depth with the HTML structure, otherwise components on page can't be moved around easily. Using the shollow depth of applicability approach is also the ability to more readily convert modules into templates for dynamic contnent.
+
+ * CSS gets evaluated from right to left.
+ * Three simple guidelines to help limit the number of elements that need to be evaluated: use child selectors, avoid tag selectors for common elements, and use class names as the right-most selector.
+ * SMACSS approach has two core goals: increase the semantic value of a section of HTML and content, and decrease the expectation of a specific HTML structure.
+ * SMACSS is about identifying patterns and codifying them. 
+ * Prototype should assist in viewing components in part or in whole and to allow the codification of the design language into building blocks. Prototype goals: show states, review localization, and isolate dependencies. 
+ * Preprocessor allows you to use a special syntax in your CSS that is then compiled within your project. Preprocessor features: variables,operations, mixins, nesting, functions, interpolation, file importing, extending.
+ * CSS sprites have become a mainstay of modern web development—and for good reason. They allow for multiple assets to be compiled into a single resource, minimizing the number of HTTP requests and ensuring that images for things like rollover states are already loaded when needed.
+ * Formatting code
+   - Single line vs. multiple lines
+   - Grouping properties
+   - Color declarations 
