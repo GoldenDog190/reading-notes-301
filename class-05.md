@@ -3,12 +3,16 @@
 ## [Heroku: Getting Started with Node](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 **Introduction**
 * This tutorial will have you deploying a Node.js app to Heroku.
+
 **Set Up**
 * In this step you’ll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.
+
 **Prepare the app**
 * In this step, you will prepare a sample application that’s ready to be deployed to Heroku.
+
 **Deploy the app**
 * In this step you will deploy the app to Heroku. Create an app on Heroku, which prepares Heroku to receive your source code. When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
+
 **View logs**
 * To view info. about your running app using: heroku logs --tail 
 
