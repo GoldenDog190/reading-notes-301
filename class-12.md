@@ -13,7 +13,8 @@
 
 **Video Notes**
 * Video Notes
-  - 
-  - 
-  - 
-  - 
+  - Partials are native to EJS
+  - Use case for partials would be a nav bar or footer that remains static
+  - Go to layout.ejs and within the body tag put another body tag that's for the partial <%- body %>, and underneath it put <%- include('partial/onepartial')%>
+  - Then create a new file for the parial/onepartail.ejs. In that new file make a header with a sentence in it and put nodemon in the terminal to see if the partail works. After you put in nodemon, refresh the web page to see what you wrote in the header.
+  - This is how you set up a partail.
