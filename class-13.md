@@ -36,15 +36,51 @@
 
 ## [Video Series on Styling HTML5 Forms](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g5_p_BVUGWykHfqx6bb7qK)
 
+**Forms in HTML5**
+* Button - defines a clickable button. Attributes: 
+  - name = "submit_button"
+  - value = "primary"
+  - type = "submit" or "reset"
+  - disabled - disables button
+  - autofocus - sets focus on element when page loads
+* Fieldset - defines a group of controls within a form. Attribute:
+  - Disabled - disables the controls the fieldset contains
+* Form - defines an interactive form with controls. Attributes:
+  - action - defines which URL the form's information is sent to when submitted. With "/contact" you can use a relative URL. Or you can use this "https://htmlreference.io/contact", which is an absolute URL.
+  - method - defines the HTTP method used when submitting the form. "post" is the form information is sent to the server as part of the request body. "get" is the form information is sent to the server as part URL parameters: /contact?first_name=Alex&last_name=Smith.
+  - name = "sign_up_form"
+  - autocomplete = "off" or "on"
+  - target = "_blank", "_self", "_parent", or "_top"
+  - enctype = "application/x-www-form-urlencoded", "text/plain", or "multipart/form-data"
+  - novalidate - tells the browser to not validate the form on submission
+* input - defines an interactive control within a web form. Attributes:
+  - type - defines the type of form input
+  - name - defines the unique identifier for that input within the form
+  - placeholder - defines a non-selectable placeholder text that only appears when the input is empty
+  - required - tells the browser that this input is required 
+  - disabled - disables the input
+* legend - defines a caption for a parent's content. 
+* textarea - defines a multi-line text control within a web form. Attributes:
+  - name - defines the unique identifier for that textarea within the form 
+  - autocomplete - determines if the browser can autocomplete the textarea
+  - minlength - defines the minimum amount of characters the textarea required to be valid
+  - maxlength - defines the maxlength amount of characters allowed
+  - placeholder - defines a non-selectable placeholder text that only appears when the textarea is empty
+  - cols - defines the number of columns
+  - rows - defines the number of rows
+  - wrap - defines how the text should be wrapped
+  - disabled - disables the textarea
+  - required - tells the browser that this textarea is required
+  - autofocus - sets focus on the textarea when the web page loads
+  - readonly - turns the textarea into a read-only element
+  - spellcheck - enables the browser spell checker
+
 **Styling HTML5 Forms**
 * Video Notes
+  - Will be going over radio buttons, checkboxes, fieldset, text input, select boxes, and input validation styles in HTML and CSS.
+  - For the CSS of base form styles give the body background-color, magin of 0, font-family. Next style the header with background-color, padding, and text-align: center. After that do the form, put margin and color. Then stylize the form p with font-size and letter-spacing.
+  - For the radio buttons styling work on the input with the type radio, and give it opacity, width, and margin. Next work on the labels for each button, and give it a margin-bottom, display-inline: block, padding-left, background: url(url) no-repeat, background-position, line-height, and cursor :pointer. Next style the input:checked + label[for =""] with background-position and color.
+  - For the checkboxes styling work first style the input type with opacity, width, and margin. Next work on the labels for each checkbox, and give it display: inline-block, margin-bottom, padding-left, background: url(url) no-repeat, background-position, line-height, and cursor :pointer. Next style the input:checked + label[for =""] with background-position and color.
+  - For the text inputs
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-
